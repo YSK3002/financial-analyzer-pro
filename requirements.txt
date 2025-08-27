@@ -1,0 +1,14 @@
+### `requirements.txt`
+```python:requirements.txt
+click==8.1.7
+crewai==0.35.9
+crewai-tools==0.4.0
+fastapi==0.111.0
+uvicorn==0.29.0
+python-dotenv==1.0.1
+langchain-google-genai==1.0.3
+langchain-community==0.2.1
+pypdf==4.2.0
+# For Bonus Features
+celery==5.4.0
+redis==5.0.4
