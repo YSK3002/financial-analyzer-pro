@@ -28,12 +28,3 @@ The original codebase had two categories of issues: **Deterministic Bugs** and *
 | **`agents.py`** | The agent `role`, `goal`, and `backstory` prompts were written as jokes, instructing the AI to provide useless, sarcastic, and fabricated financial advice. | **Complete Rewrite:** All agent prompts were rewritten to be professional and specific. They are now instructed to act as expert financial analysts, verifiers, investment advisors, and risk assessors, ensuring high-quality, relevant output. |
 | **`task.py`** | The task `description` and `expected_output` were also nonsensical, guiding the AI to generate random text and fake URLs. | **Complete Rewrite:** All task prompts were rewritten to provide clear, actionable instructions. The tasks are now structured logically and align with the professional personas of the agents, defining a clear path to a comprehensive financial report. |
 | **`main.py`** | The original crew consisted of only one agent performing one task, which was a highly inefficient use of the specialized agents defined in the code. | The crew was redesigned into a **sequential process** that leverages all four specialized agents. The workflow is now: **Verify -> Analyze -> Advise -> Assess Risk**, which produces a much more thorough and valuable analysis. |
-
----
-
-## 3. Setup and Usage Instructions 🛠️
-
-### Step 1: Clone the Repository
-```sh
-git clone [https://github.com/gemini-solutions/financial-analyzer-pro.git](https://github.com/gemini-solutions/financial-analyzer-pro.git)
-cd financial-analyzer-pro
